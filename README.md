@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To get OK response from Github Graphql API v4
+To get some search result from Github API you need to [create a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token) and add it to `const AUTH_TOKEN` in `/src/AUTH_TOKEN.ts`.
+
+Please don't commit your access token. 
+
 ## Available Scripts
 
 In the project directory, you can run:

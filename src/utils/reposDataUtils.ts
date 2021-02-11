@@ -1,11 +1,12 @@
 import { DataFromResponse, RepoReformatted, RepoFromResponse } from '../types';
+import AUTH_TOKEN from '../AUTH_TOKEN';
 
 export const fetchRepos = (searchQuery: string, resultsNumber: number): Promise<{ data: DataFromResponse }> =>
   fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'token ',
+      'Authorization': `token ${AUTH_TOKEN}`,
     },
     body: JSON.stringify({
       query: `
